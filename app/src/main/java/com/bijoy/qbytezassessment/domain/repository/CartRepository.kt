@@ -1,5 +1,6 @@
 package com.bijoy.qbytezassessment.domain.repository
 
+import android.util.Log
 import com.bijoy.qbytezassessment.data.model.CartItem
 
 interface CartRepository {
@@ -11,5 +12,9 @@ interface CartRepository {
     suspend fun removeCartItem(id: Int)
 
     suspend fun isProductInCart(productId: Int): Boolean
+
+    fun load() {
+        Log.e("OKK", "TEST")
+    }
 
 }

@@ -7,14 +7,12 @@ plugins {
 
 android {
     namespace = "com.bijoy.qbytezassessment"
-    compileSdk {
-        version = release(36)
-    }
+    compileSdk = 33
 
     defaultConfig {
         applicationId = "com.bijoy.qbytezassessment"
-        minSdk = 26
-        targetSdk = 36
+        minSdk = 24
+        targetSdk = 33
         versionCode = 1
         versionName = "1.0"
 
@@ -44,10 +42,6 @@ android {
 
 dependencies {
     implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
-    implementation(libs.androidx.legacy.support.v4)
-    implementation(libs.androidx.recyclerview)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
     testImplementation(libs.junit)
